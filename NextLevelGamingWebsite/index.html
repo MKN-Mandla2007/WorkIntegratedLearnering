@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Level Gaming & Esports Arena</title>
+  
+  <style>
+    
+    :root {
+      --pink: #f72585;
+      --indigo: #7209b7;
+      --purple-blue: #3a0ca3;
+      --dark-blue: #4361ee;
+      --light-blue: #4cc9f0;
+      
+      --bg-main: #141414;
+      --bg-card: #1a1a1a;
+      --text-light: #ffffff;
+      --text-muted: #a0a0a0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 1.5rem 5%;
+      background-color: #050505;
+      border-bottom: 2px solid var(--purple-blue);
+    }
+
+    .logo-center {
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+    }
+
+    .logo-center img {
+      height: 90px;
+      width: auto;
+    }
+
+    .brand-name {
+      justify-self: start;
+      font-size: 1.2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      
+      background: linear-gradient(90deg, var(--pink), var(--purple-blue), var(--light-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav {
+      justify-self: end;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:nth-child(1) { color: var(--pink); }
+    nav a:nth-child(2) { color: var(--indigo); }
+    nav a:nth-child(3) { color: var(--purple-blue); }
+    nav a:nth-child(4) { color: var(--dark-blue); }
+    nav a:nth-child(5) { color: var(--light-blue); }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      position: relative;
+      height: 70vh;
+      background-image: url('Hero_shot.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .services-section {
+      padding: 4rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid #555555;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #ffffff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--pink), var(--indigo));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .card-link {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--dark-blue);
+      transition: color 0.3s ease;
+    }
+
+    .card-link:hover {
+      color: var(--light-blue);
+    }
+
+    footer {
+      background: linear-gradient(to bottom, #050505, #251339);
+      padding: 3rem 5%;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      border-top: 1px solid var(--purple-blue);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-col h4 {
+      color: var(--text-light);
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col a:hover {
+      color: var(--pink);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-name">Next Level Gaming & Esports Arena</div>
+    <div class="logo-center">
+      <img src="NLG logo.png" alt="Next Level Gaming Logo">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Packages</a>
+      <a href="calculate.html">Calculate Fees</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+  </section>
+
+  <main class="services-section">
+    
+    <article class="card">
+      <img src="Esports_Gaming.jpg" alt="Esports player at setup">
+      <div class="card-content">
+        <h3 class="card-title">Esports Training Package</h3>
+        <p class="card-desc">Improve competitive gaming skills with professional coaching.</p>
+        <a href="products.html" class="card-link">Learn More &gt;</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="Vr_booth.jpg" alt="Woman using VR headset">
+      <div class="card-content">
+        <h3 class="card-title">Virtual Reality Experience</h3>
+        <p class="card-desc">Explore immersive virtual reality games.</p>
+        <a href="products.html" class="card-link">Learn More &gt;</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="birthday_package.jpg" alt="People celebrating a birthday party">
+      <div class="card-content">
+        <h3 class="card-title">Birthday Party Package</h3>
+        <p class="card-desc">Host a birthday celebration with access to fun party games such as Mario Kart.</p>
+        <a href="products.html" class="card-link">Learn More &gt;</a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="footer-col">
+      <h4>Next Level Gaming & Esports Arena</h4>
+      <p>11 Ruby Close, Witkoppen, Sandton</p>
+      <br>
+      <p>&copy; 2026 Next Level Gaming & Esports Arena. All rights reserved.</p>
+    </div>
+    
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h4>Social Media</h4>
+      
+      <div class="social-icons">
+        <a href="#" style="color: #ff0000;">[YT]</a>
+        <a href="#" style="color: #1877F2;">[FB]</a>
+        <a href="#" style="color: #E1306C;">[IG]</a>
+        <a href="#" style="color: #ffffff;">[X]</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
